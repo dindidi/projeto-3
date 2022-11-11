@@ -2,24 +2,47 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+
+
+
+
+
+.img-logo {
+    max-width: 200px;
+}
+
 .navbar {
-    background-color: brown;
+    background-color: #fff;
 }
 
 #cabecalho .nav .nav-link.active {
     background-color: #fff;
-    color: black;
+    color: rgb(217, 103, 3);
 
+}
+
+#carousel img {
+    width: 100%;
+    height: 600px;
 }
 
 
 #cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover,
-.nav-cardapio .nav-link.active:hover {
-    color: #fff;
+.nav-expedicoes .nav-link.active:hover {
+    color: rgb(217, 103, 3);
 }
 
+#sobre {
+    background-color: black;
+}
+
+#sobre h2,
+p {
+    color: #fff;
+}
 
 
 .navbar-toggler {
@@ -32,22 +55,19 @@ body {
 
 
 
-#sobre-o-restaurante,
-#cardapio {
-    background-color: #ffeae6;
-}
+
 
 .text-colored {
     color: brown;
 }
 
-.nav-cardapio .nav-link.active,
-#fale-conosco button {
+.nav-expedicoes .nav-link.active,
+#contato button {
     background-color: brown;
     color: #fff;
 }
 
-.nav-cardapio .nav-link:hover {
+.nav-expedicoes .nav-link:hover {
     color: brown;
 }
 
@@ -59,6 +79,90 @@ body {
 
 .social-links a {
     text-decoration: none;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    margin-top: 50%
+}
+
+
+#btn-quero-este {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255, 27, 0);
+    background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+}
+
+#btn-quero-este:hover {
+    color: #f0094a;
+    background: transparent;
+    box-shadow: none;
+}
+
+#btn-quero-este:before,
+#btn-quero-este:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #f0094a;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+#btn-quero-este:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+#btn-quero-este:hover:before,
+#btn-quero-este:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+
+
+@media (max-width: 667px) {
+
+    .img-logo {
+        margin-left: 15%;
+    }
+
+    header button {
+        margin-top: 10px;
+        margin-left: 40%;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .carousel-item img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+
+
+
+
+
 }
 
 @media (max-width: 767px) {
